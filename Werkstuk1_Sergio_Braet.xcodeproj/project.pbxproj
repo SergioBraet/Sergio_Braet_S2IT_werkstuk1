@@ -14,6 +14,8 @@
 		3F4C6EE920750CBA003CCDF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4C6EE720750CBA003CCDF0 /* LaunchScreen.storyboard */; };
 		3F4C6EF420750CBB003CCDF0 /* Werkstuk1_Sergio_BraetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C6EF320750CBB003CCDF0 /* Werkstuk1_Sergio_BraetTests.swift */; };
 		3F4C6EFF20750CBB003CCDF0 /* Werkstuk1_Sergio_BraetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C6EFE20750CBB003CCDF0 /* Werkstuk1_Sergio_BraetUITests.swift */; };
+		3F50F9B62076433B001AB84A /* Persoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F50F9B52076433B001AB84A /* Persoon.swift */; };
+		3F50F9B820764805001AB84A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F50F9B720764805001AB84A /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3F4C6EFA20750CBB003CCDF0 /* Werkstuk1_Sergio_BraetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Werkstuk1_Sergio_BraetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4C6EFE20750CBB003CCDF0 /* Werkstuk1_Sergio_BraetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Werkstuk1_Sergio_BraetUITests.swift; sourceTree = "<group>"; };
 		3F4C6F0020750CBB003CCDF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F50F9B52076433B001AB84A /* Persoon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persoon.swift; sourceTree = "<group>"; };
+		3F50F9B720764805001AB84A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				3F4C6EDE20750CBA003CCDF0 /* AppDelegate.swift */,
 				3F4C6EE020750CBA003CCDF0 /* ViewController.swift */,
 				3F4C6EE220750CBA003CCDF0 /* Main.storyboard */,
+				3F50F9B720764805001AB84A /* TableViewController.swift */,
 				3F4C6EE520750CBA003CCDF0 /* Assets.xcassets */,
 				3F4C6EE720750CBA003CCDF0 /* LaunchScreen.storyboard */,
 				3F4C6EEA20750CBA003CCDF0 /* Info.plist */,
+				3F50F9B52076433B001AB84A /* Persoon.swift */,
 			);
 			path = Werkstuk1_Sergio_Braet;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			files = (
 				3F4C6EE120750CBA003CCDF0 /* ViewController.swift in Sources */,
 				3F4C6EDF20750CBA003CCDF0 /* AppDelegate.swift in Sources */,
+				3F50F9B62076433B001AB84A /* Persoon.swift in Sources */,
+				3F50F9B820764805001AB84A /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +513,7 @@
 				3F4C6F0520750CBB003CCDF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F4C6F0620750CBB003CCDF0 /* Build configuration list for PBXNativeTarget "Werkstuk1_Sergio_BraetTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +522,7 @@
 				3F4C6F0820750CBB003CCDF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F4C6F0920750CBB003CCDF0 /* Build configuration list for PBXNativeTarget "Werkstuk1_Sergio_BraetUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +531,7 @@
 				3F4C6F0B20750CBB003CCDF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
