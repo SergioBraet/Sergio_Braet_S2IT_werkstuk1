@@ -20,7 +20,7 @@ class Persoon{
     var gemeente:String
     var coordinaten: CLLocationCoordinate2D
     var telefoonnummer:String
-    
+
     
     init(naam: String, voornaam: String, foto: String, straat: String, huisnummer: Int, postcode: Int, gemeente: String, coordinaten: CLLocationCoordinate2D, telefoonnummer: String){
         self.naam = naam

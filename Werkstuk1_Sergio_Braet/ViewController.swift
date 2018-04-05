@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let test = ""
+    @IBOutlet weak var lblNaam: UILabel!
+    var persoon:Persoon?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.lblNaam.text = (persoon?.voornaam)! + " " + (persoon?.naam)!
     }
 
     override func didReceiveMemoryWarning() {

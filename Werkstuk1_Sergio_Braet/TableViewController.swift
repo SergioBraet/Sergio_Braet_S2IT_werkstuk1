@@ -54,6 +54,17 @@ class TableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //bron om gegevens door te sturen naar viewcontroller die in tab bar zit: https://stackoverflow.com/questions/27296742/pass-data-from-tableview-to-tab-bar-view-controller-in-swift
+        
+        if let nextVC = segue.destination as? UITabBarController {
+             let tabbar : UITabBarController = segue.destination as! UITabBarController
+            let personenVC: ViewController = tabbar.viewControllers?.first as! ViewController
+            let indexPath = self.tableView.indexPathForSelectedRow
+            personenVC.persoon = self.personen[(indexPath?.row)!]
+        }
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
