@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F46D35F2077AAC500DE4AD7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F46D35E2077AAC500DE4AD7 /* MapKit.framework */; };
+		3F46D3612077ADBA00DE4AD7 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F46D3602077ADBA00DE4AD7 /* Annotation.swift */; };
+		3F46D3632077BC9500DE4AD7 /* LocatieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F46D3622077BC9500DE4AD7 /* LocatieViewController.swift */; };
 		3F4C6EDF20750CBA003CCDF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C6EDE20750CBA003CCDF0 /* AppDelegate.swift */; };
 		3F4C6EE120750CBA003CCDF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C6EE020750CBA003CCDF0 /* ViewController.swift */; };
 		3F4C6EE420750CBA003CCDF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4C6EE220750CBA003CCDF0 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F46D35E2077AAC500DE4AD7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3F46D3602077ADBA00DE4AD7 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		3F46D3622077BC9500DE4AD7 /* LocatieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocatieViewController.swift; sourceTree = "<group>"; };
 		3F4C6EDB20750CBA003CCDF0 /* Werkstuk1_Sergio_Braet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1_Sergio_Braet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4C6EDE20750CBA003CCDF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F4C6EE020750CBA003CCDF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F46D35F2077AAC500DE4AD7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F46D35D2077AAC500DE4AD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F46D35E2077AAC500DE4AD7 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F4C6ED220750CBA003CCDF0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,7 @@
 				3F4C6EF220750CBB003CCDF0 /* Werkstuk1_Sergio_BraetTests */,
 				3F4C6EFD20750CBB003CCDF0 /* Werkstuk1_Sergio_BraetUITests */,
 				3F4C6EDC20750CBA003CCDF0 /* Products */,
+				3F46D35D2077AAC500DE4AD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +120,8 @@
 				3F4C6EDE20750CBA003CCDF0 /* AppDelegate.swift */,
 				3F4C6EE020750CBA003CCDF0 /* ViewController.swift */,
 				3F4C6EE220750CBA003CCDF0 /* Main.storyboard */,
+				3F46D3622077BC9500DE4AD7 /* LocatieViewController.swift */,
+				3F46D3602077ADBA00DE4AD7 /* Annotation.swift */,
 				3F50F9B720764805001AB84A /* TableViewController.swift */,
 				3F4C6EE520750CBA003CCDF0 /* Assets.xcassets */,
 				3F4C6EE720750CBA003CCDF0 /* LaunchScreen.storyboard */,
@@ -200,6 +218,11 @@
 					3F4C6EDA20750CBA003CCDF0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3F4C6EEE20750CBB003CCDF0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -265,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F46D3632077BC9500DE4AD7 /* LocatieViewController.swift in Sources */,
 				3F4C6EE120750CBA003CCDF0 /* ViewController.swift in Sources */,
+				3F46D3612077ADBA00DE4AD7 /* Annotation.swift in Sources */,
 				3F4C6EDF20750CBA003CCDF0 /* AppDelegate.swift in Sources */,
 				3F50F9B62076433B001AB84A /* Persoon.swift in Sources */,
 				3F50F9B820764805001AB84A /* TableViewController.swift in Sources */,

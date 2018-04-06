@@ -60,8 +60,10 @@ class TableViewController: UITableViewController {
         if let nextVC = segue.destination as? UITabBarController {
              let tabbar : UITabBarController = segue.destination as! UITabBarController
             let personenVC: ViewController = tabbar.viewControllers?.first as! ViewController
+            let locatieVC: LocatieViewController = tabbar.viewControllers?[1] as! LocatieViewController
             let indexPath = self.tableView.indexPathForSelectedRow
             personenVC.persoon = self.personen[(indexPath?.row)!]
+            locatieVC.personen = self.personen
         }
     }
     
