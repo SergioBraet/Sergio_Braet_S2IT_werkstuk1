@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3ED3F02078E86800087DC2 /* FotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ED3EF2078E86800087DC2 /* FotoViewController.swift */; };
 		3F46D35F2077AAC500DE4AD7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F46D35E2077AAC500DE4AD7 /* MapKit.framework */; };
 		3F46D3612077ADBA00DE4AD7 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F46D3602077ADBA00DE4AD7 /* Annotation.swift */; };
 		3F46D3632077BC9500DE4AD7 /* LocatieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F46D3622077BC9500DE4AD7 /* LocatieViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3ED3EF2078E86800087DC2 /* FotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotoViewController.swift; sourceTree = "<group>"; };
 		3F46D35E2077AAC500DE4AD7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3F46D3602077ADBA00DE4AD7 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		3F46D3622077BC9500DE4AD7 /* LocatieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocatieViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				3F4C6EDE20750CBA003CCDF0 /* AppDelegate.swift */,
 				3F4C6EE020750CBA003CCDF0 /* ViewController.swift */,
 				3F4C6EE220750CBA003CCDF0 /* Main.storyboard */,
+				3F3ED3EF2078E86800087DC2 /* FotoViewController.swift */,
 				3F46D3622077BC9500DE4AD7 /* LocatieViewController.swift */,
 				3F46D3602077ADBA00DE4AD7 /* Annotation.swift */,
 				3F50F9B720764805001AB84A /* TableViewController.swift */,
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F46D3632077BC9500DE4AD7 /* LocatieViewController.swift in Sources */,
+				3F3ED3F02078E86800087DC2 /* FotoViewController.swift in Sources */,
 				3F4C6EE120750CBA003CCDF0 /* ViewController.swift in Sources */,
 				3F46D3612077ADBA00DE4AD7 /* Annotation.swift in Sources */,
 				3F4C6EDF20750CBA003CCDF0 /* AppDelegate.swift in Sources */,

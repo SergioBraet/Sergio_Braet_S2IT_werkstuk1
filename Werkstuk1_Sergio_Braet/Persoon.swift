@@ -8,8 +8,6 @@
 import Foundation
 import MapKit
 
-//: iedere persoon bevat een naam, voornaam, foto, adres (straat, huisnummer,postcode, gemeente), gps coördinaten en een telefoonnummer
-
 class Persoon{
     var naam:String
     var voornaam:String

@@ -15,7 +15,12 @@ class TableViewController: UITableViewController {
                     Persoon(naam: "Van Vooren", voornaam: "Lisa", foto: "lisa", straat: "Bagnolsstraat", huisnummer: 5, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.176941, longitude:  3.583792), telefoonnummer: "0493 12 34 56"),
                     Persoon(naam: "Jansens", voornaam: "Tjorven", foto: "tjorven", straat: "Hugo Verrieststraat", huisnummer: 5, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.178645, longitude:  3.582037), telefoonnummer: "+32 473 00 00 01"),
                     Persoon(naam: "Dedoncker", voornaam: "Ine", foto: "ine", straat: "Pieter Ecrevissestraat", huisnummer: 13, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.176681, longitude:  3.582283), telefoonnummer: "0473 88 88 88"),
-                    Persoon(naam: "De Bruyne", voornaam: "Saskia", foto: "saskia", straat: "Lekestraat", huisnummer: 79, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.179270, longitude:  3.585931), telefoonnummer: "+32 479 88 41 00")]
+                    Persoon(naam: "De Bruyne", voornaam: "Saskia", foto: "saskia", straat: "Lekestraat", huisnummer: 79, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.179270, longitude:  3.585931), telefoonnummer: "+32 479 88 41 00"),
+                    Persoon(naam: "Dedoncker", voornaam: "Maarten", foto: "maarten", straat: "Tuinbouwstraat", huisnummer: 7, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.186422, longitude:  3.584733), telefoonnummer: "+32 478 44 11 55"),
+                    Persoon(naam: "Asat", voornaam: "Mohammed", foto: "mohammed", straat: "Raaigrasstraat", huisnummer: 15, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.190055, longitude:  3.584659), telefoonnummer: "+32 493 88 74 12"),
+                    Persoon(naam: "Allaert", voornaam: "Koen", foto: "koen", straat: "Zonnebloemstraat", huisnummer: 12, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.187302, longitude:  3.580174), telefoonnummer: "0493 56 87 12"),
+                    Persoon(naam: "Goethals", voornaam: "Sara", foto: "sara", straat: "Roze", huisnummer: 123, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.189759, longitude:  3.575452), telefoonnummer: "+32 480 77 11 11"),
+                    Persoon(naam: "De Rycke", voornaam: "Lars", foto: "lars", straat: "Stuivenberg", huisnummer: 4, postcode: 9900, gemeente: "Eeklo", coordinaten: CLLocationCoordinate2D(latitude: 51.180790, longitude:  3.577120), telefoonnummer: "+32 471 98 76 54")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,11 +62,12 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //bron om gegevens door te sturen naar viewcontroller die in tab bar zit: https://stackoverflow.com/questions/27296742/pass-data-from-tableview-to-tab-bar-view-controller-in-swift
         
-        if let nextVC = segue.destination as? UITabBarController {
-             let tabbar : UITabBarController = segue.destination as! UITabBarController
-            let personenVC: ViewController = tabbar.viewControllers?.first as! ViewController
-            let locatieVC: LocatieViewController = tabbar.viewControllers?[1] as! LocatieViewController
+        if let tabBarVC = segue.destination as? UITabBarController {
+            
+            let personenVC: ViewController = tabBarVC.viewControllers?.first as! ViewController
+            let locatieVC: LocatieViewController = tabBarVC.viewControllers?[1] as! LocatieViewController
             let indexPath = self.tableView.indexPathForSelectedRow
+            
             personenVC.persoon = self.personen[(indexPath?.row)!]
             locatieVC.personen = self.personen
         }
